@@ -10,11 +10,11 @@ RUN mkdir /usr/src
 WORKDIR /usr/src
 
 RUN git clone --depth 1 --branch ${ROCKSDB_VERSION} https://github.com/facebook/rocksdb.git
+WORKDIR /usr/src/rocksdb
 
 # Fix 'install -c' flag
 RUN sed -i 's/install -C/install -c/g' Makefile
 
-WORKDIR /usr/src/rocksdb
 RUN make shared_lib
 RUN make install-shared
 
