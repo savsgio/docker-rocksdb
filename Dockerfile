@@ -19,4 +19,7 @@ RUN make shared_lib
 RUN make install-shared
 
 WORKDIR /
+
+# Clean
+RUN apk del build-base linux-headers git bash perl
 RUN rm -rf /usr/src/rocksdb
