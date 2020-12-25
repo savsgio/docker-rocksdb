@@ -12,4 +12,4 @@ WORKDIR /usr/src
 RUN git clone --depth 1 --branch ${ROCKSDB_VERSION} https://github.com/facebook/rocksdb.git
 
 WORKDIR /usr/src/rocksdb
-RUN make static_lib
+RUN make shared_lib
