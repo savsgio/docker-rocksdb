@@ -1,6 +1,6 @@
 FROM alpine:3
 
-ARG ROCKSDB_VERSION=v6.17.3
+ARG ROCKSDB_VERSION=v6.16.4
 
 RUN apk update
 RUN apk add --no-cache zlib-dev bzip2-dev lz4-dev snappy-dev zstd-dev gflags-dev
