@@ -1,4 +1,4 @@
-FROM alpine:3
+FROM alpine:3.13
 
 ARG ROCKSDB_VERSION=v6.22.1
 
