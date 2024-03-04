@@ -1,6 +1,6 @@
 FROM alpine:3.18
 
-ARG ROCKSDB_VERSION=v8.10.0
+ARG ROCKSDB_VERSION=v8.10.2
 
 
 RUN apk update && \
