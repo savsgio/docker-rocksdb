@@ -1,6 +1,6 @@
 FROM alpine:3.20
 
-ARG ROCKSDB_VERSION=v9.1.1
+ARG ROCKSDB_VERSION=v9.2.1
 
 RUN apk update && \
     apk add --no-cache zlib-dev bzip2-dev lz4-dev snappy-dev zstd-dev gflags-dev && \
